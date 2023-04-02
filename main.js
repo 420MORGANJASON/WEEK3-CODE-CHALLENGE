@@ -12,7 +12,7 @@ const renderPosts = (posts) => {
                 <div class="card-body">
                     <h5 class="card-title">${post.title}</h5>
                   <p class="card-text">${post.id}</p>
-                    <img class="card-img">${post.poster}</img>
+                    <img class="card-img" src="${post.poster}">
                     <p class="card-text">${post.description}</p>
 
                     <h6 class="card-subtitle mb-2 text-muted">${post.showtime}</h6>
@@ -38,22 +38,24 @@ fetch('http://localhost:3000/films')
 // Create - insert new post
 // Method:POST
 
-addPostForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log('Form submited!')
- })
-//     console.log(titleValue.value)
-//    fetch('http://localhost:3000/films') {
+// addPostForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     // console.log(titleValue.value)
+//     fetch('http://localhost:3000/films') {
 //    method: 'POST',
 //    headers: {
 //     'Content-Type': 'application/json' 
 
-//    },
-//    body: JSON.stringify(
-//     title: titleValue.value
+//    }},
+//    body: JSON.stringify({ 
+//     title: titleValue.value,
 //     body:bodyValue.value
-//    )
-//     }
+
+//     // console.log('Form submited!')
+//  })
+   
+    
 //     .then(res => res.json())
 //     .then(data => {
 //         const dataArr = [];

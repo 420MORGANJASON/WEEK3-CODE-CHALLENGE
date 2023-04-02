@@ -9,7 +9,7 @@ background-color: bisque;
 font-size: 30px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-style: italic;
-font size: 40px;
+font size: 50px;
 }
 .add-post-form{
     font-size: 30px;
@@ -38,4 +38,11 @@ body{
  text-align: center;
  text-decoration: solid;
     
+}
+.card-body{
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+    size: 40%;
+        
 }
