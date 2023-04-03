@@ -44,7 +44,7 @@
                         <input type="text" class="form-control" id="title-value">
                     </div>
                     
-                    <a href="#" class="card-link">Add Film</a>
+                   <button id="addfilm">ADD FILM</button>
                 </form>
             </div>
         </div>
@@ -57,8 +57,20 @@
                         content.</p>
                     <a href="#" class="card-link">BUY TICKET</a>
                     <a href="#" class="card-link">DELETE </a>
+
+
                 </div>
             </div>
+
+
+    <div id="increment-count">
+        <input type="image" id="up-arrow" src="up_arrow.png" />
+    </div>
+    <div id="total-count">
+    </div>
+    <div id="decrement-count">
+        <input type="image" id="down-arrow" src="down_arrow.png" />
+    </div>
             <div class="card mt-4 col-md-6 bg-ligt">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -66,13 +78,26 @@
                     <img class="card-img">post.poster</img>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                         content.</p>
-                    <a href="#" class="card-link">BUY TICKET</a>
-                    <a href="#" class="card-link">DELETE</a>
+                       <button id="btn">BUY TICKET</button>
+                        <button id="btn">REMOVE TICKET</button>
+                    <!-- <a href="#" class="card-link">BUY TICKET</a>
+                    </button>
+                    <a href="#" class="card-link">DELETE</a> -->
                 </div>
             </div>
         </div>
     </div>
     <script src="main.js">
+
+
+    
+        function increment() {
+            document.getElementById('btn').stepUp();
+   }
+        function decrement() {
+            document.getElementById('btnz').stepDown();
+   }
+
     </script>
 
 </body>
